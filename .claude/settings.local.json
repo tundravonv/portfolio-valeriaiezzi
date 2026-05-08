@@ -1,0 +1,19 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm install *)",
+      "Bash(xargs ls *)",
+      "Bash(cp \"/Users/valeriaiezzi/Downloads/MML.png\" \"/Users/valeriaiezzi/portfolio-valeriaiezzi/public/images/ikea-card.png\")",
+      "Bash(cp \"/Users/valeriaiezzi/Downloads/Suitsupply.png\" \"/Users/valeriaiezzi/portfolio-valeriaiezzi/public/images/suitsupply-card.png\")",
+      "Bash(cp \"/Users/valeriaiezzi/Downloads/PlantDesigner.png\" \"/Users/valeriaiezzi/portfolio-valeriaiezzi/public/images/sandvik-card.png\")",
+      "Bash(cp \"/Users/valeriaiezzi/Downloads/Lock-installation apps.png\" \"/Users/valeriaiezzi/portfolio-valeriaiezzi/public/images/assa-abloy-card.png\")",
+      "Bash(cp \"/Users/valeriaiezzi/Downloads/Sustainable Grocery App.png\" \"/Users/valeriaiezzi/portfolio-valeriaiezzi/public/images/grocery-card.png\")",
+      "Bash(cp \"/Users/valeriaiezzi/Downloads/Valeria.png\" \"/Users/valeriaiezzi/portfolio-valeriaiezzi/public/photo.png\")",
+      "Bash(mdfind \"kMDItemDisplayName == 'node'\")",
+      "mcp__Claude_in_Chrome__tabs_context_mcp",
+      "mcp__Claude_Preview__preview_start",
+      "Bash(grep -i -E \"\\\\.png$\")",
+      "Bash(awk '{print $1, $NF}')"
+    ]
+  }
+}

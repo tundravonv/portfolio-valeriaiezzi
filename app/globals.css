@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #ffffff;
+  color: #1a1a1a;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ── Tag colour variants ────────────────────────────────── */
+/* Usage: <Tag variant="ux-research" /> etc. */
+.tag-purple {
+  color: #6D28D9;
+  background-color: #EDE9FE;
+  border: 1px solid #C4B5FD;
+}
+.tag-pink {
+  color: #BE185D;
+  background-color: #FCE7F3;
+  border: 1px solid #F9A8D4;
+}
+.tag-amber {
+  color: #92400E;
+  background-color: #FEF3C7;
+  border: 1px solid #FCD34D;
+}
+.tag-gray {
+  color: #555555;
+  background-color: #F3F4F6;
+  border: 1px solid #D1D5DB;
+}

@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Project page example: IKEA — Master Material Library -->
+<svg width="1440" height="3800" viewBox="0 0 1440 3800"
+     xmlns="http://www.w3.org/2000/svg"
+     font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">
+
+  <rect width="1440" height="3800" fill="#FFFFFF"/>
+
+  <!-- ── TOP BAR ────────────────────────────────────────────── -->
+  <text x="80" y="36" font-size="12" fill="#555555">← Back to homepage</text>
+  <text x="1360" y="36" font-size="12" fill="#555555" text-anchor="end">Valeria Iezzi ©2026</text>
+
+  <!-- ── TITLE BLOCK ────────────────────────────────────────── -->
+  <!-- Project title (centred) -->
+  <text x="720" y="112" font-size="38" font-weight="700" fill="#1a1a1a" text-anchor="middle" letter-spacing="-0.5">Master Material Library</text>
+
+  <!-- Tags (centred) -->
+  <rect x="456" y="128" width="92" height="24" rx="12" fill="#EDE9FE" stroke="#C4B5FD" stroke-width="1"/>
+  <text x="502" y="144" font-size="11.5" font-weight="500" fill="#6D28D9" text-anchor="middle">UX research</text>
+  <rect x="556" y="128" width="76" height="24" rx="12" fill="#EDE9FE" stroke="#C4B5FD" stroke-width="1"/>
+  <text x="594" y="144" font-size="11.5" font-weight="500" fill="#6D28D9" text-anchor="middle">UI Design</text>
+  <rect x="640" y="128" width="103" height="24" rx="12" fill="#FEF3C7" stroke="#FCD34D" stroke-width="1"/>
+  <text x="691" y="144" font-size="11.5" font-weight="500" fill="#92400E" text-anchor="middle">Design System</text>
+  <rect x="751" y="128" width="104" height="24" rx="12" fill="#FCE7F3" stroke="#F9A8D4" stroke-width="1"/>
+  <text x="803" y="144" font-size="11.5" font-weight="500" fill="#BE185D" text-anchor="middle">Service Design</text>
+
+  <!-- ── HERO IMAGE PLACEHOLDER ─────────────────────────────── -->
+  <rect x="80" y="172" width="1280" height="400" rx="16" fill="#E2E8EE"/>
+  <text x="720" y="362" font-size="14" fill="#9AAFBF" text-anchor="middle">Hero image placeholder</text>
+  <text x="720" y="382" font-size="11" fill="#B8C9D4" text-anchor="middle">/public/images/ikea-card.png</text>
+
+  <!-- ── INFO TABLE ─────────────────────────────────────────── -->
+  <line x1="80" y1="594" x2="1360" y2="594" stroke="#E5E5E5" stroke-width="1"/>
+  <line x1="80" y1="706" x2="1360" y2="706" stroke="#E5E5E5" stroke-width="1"/>
+
+  <!-- Client -->
+  <text x="80" y="618" font-size="10" font-weight="600" fill="#AAAAAA" letter-spacing="0.8">CLIENT</text>
+  <rect x="80" y="630" width="46" height="24" rx="3" fill="#0051BA"/>
+  <text x="103" y="646" font-size="11" font-weight="900" fill="#FFCC00" text-anchor="middle">IKEA</text>
+
+  <!-- Role -->
+  <text x="220" y="618" font-size="10" font-weight="600" fill="#AAAAAA" letter-spacing="0.8">ROLE</text>
+  <text x="220" y="638" font-size="12" fill="#1a1a1a">Lead UX Designer</text>
+
+  <!-- Duration -->
+  <text x="380" y="618" font-size="10" font-weight="600" fill="#AAAAAA" letter-spacing="0.8">DURATION</text>
+  <text x="380" y="638" font-size="12" fill="#1a1a1a">2022 — 2023</text>
+
+  <!-- Responsibilities -->
+  <text x="540" y="618" font-size="10" font-weight="600" fill="#AAAAAA" letter-spacing="0.8">RESPONSIBILITIES</text>
+  <text font-size="11.5" fill="#1a1a1a">
+    <tspan x="540" y="636">User research</tspan>
+    <tspan x="540" dy="16">Strategy &amp; roadmapping</tspan>
+    <tspan x="540" dy="16">Design system</tspan>
+    <tspan x="540" dy="16">Interaction design</tspan>
+  </text>
+
+  <!-- Methods -->
+  <text x="740" y="618" font-size="10" font-weight="600" fill="#AAAAAA" letter-spacing="0.8">METHODS</text>
+  <text font-size="11.5" fill="#1a1a1a">
+    <tspan x="740" y="636">User interviews</tspan>
+    <tspan x="740" dy="16">Affinity mapping</tspan>
+    <tspan x="740" dy="16">Usability testing</tspan>
+    <tspan x="740" dy="16">A/B testing</tspan>
+  </text>
+
+  <!-- Team -->
+  <text x="940" y="618" font-size="10" font-weight="600" fill="#AAAAAA" letter-spacing="0.8">TEAM</text>
+  <text font-size="11.5" fill="#1a1a1a">
+    <tspan x="940" y="636">Product Manager</tspan>
+    <tspan x="940" dy="16">3 Developers</tspan>
+    <tspan x="940" dy="16">2 Designers</tspan>
+  </text>
+
+  <!-- Tools -->
+  <text x="1120" y="618" font-size="10" font-weight="600" fill="#AAAAAA" letter-spacing="0.8">TOOLS</text>
+  <text font-size="11.5" fill="#1a1a1a">
+    <tspan x="1120" y="636">Figma</tspan>
+    <tspan x="1120" dy="16">Miro</tspan>
+    <tspan x="1120" dy="16">Confluence</tspan>
+  </text>
+
+  <!-- ── BODY CONTENT ────────────────────────────────────────── -->
+  <!-- Max-width content column (centred, 760px) -->
+
+  <!-- Project goal -->
+  <text x="340" y="762" font-size="20" font-weight="700" fill="#1a1a1a">Project goal</text>
+  <text font-size="14" fill="#555555">
+    <tspan x="340" y="796">Redesign and transformation of IKEA's material management system into a scalable platform</tspan>
+    <tspan x="340" dy="22">improving UX, workflows and material management.</tspan>
+  </text>
+
+  <!-- ── PROCESS ─────────────────────────────────────────────── -->
+  <text x="340" y="878" font-size="20" font-weight="700" fill="#1a1a1a">Process</text>
+
+  <!-- Process: User Research & Insights -->
+  <text x="340" y="918" font-size="15" font-weight="600" fill="#1a1a1a">User Research &amp; Insights</text>
+  <text font-size="13.5" fill="#555555">
+    <tspan x="340" y="942">Research was conducted through user interviews, contextual enquiries and analysis across all user groups.</tspan>
+    <tspan x="340" dy="20">Key findings highlighted the complexity of the existing information architecture, unclear navigation,</tspan>
+    <tspan x="340" dy="20">and lack of a unified data structure across material categories.</tspan>
+  </text>
+  <!-- Image placeholder -->
+  <rect x="340" y="1000" width="760" height="240" rx="12" fill="#F0F4F8" stroke="#E2E8EE" stroke-width="1" stroke-dasharray="6,3"/>
+  <text x="720" y="1116" font-size="12" fill="#9AAFBF" text-anchor="middle">Research image placeholder</text>
+  <text x="720" y="1134" font-size="10" fill="#B8C9D4" text-anchor="middle">Add image to /public/images/ikea-master-material-library/</text>
+
+  <!-- Process: Analysis & definition -->
+  <text x="340" y="1284" font-size="15" font-weight="600" fill="#1a1a1a">Analysis &amp; definition</text>
+  <text font-size="13.5" fill="#555555">
+    <tspan x="340" y="1308">Based on the research findings, we defined information architecture improvements, identified strategic</tspan>
+    <tspan x="340" dy="20">gaps, and refined the content taxonomy. A comprehensive review of all existing material classifications</tspan>
+    <tspan x="340" dy="20">uncovered duplication and inconsistencies that needed to be resolved.</tspan>
+  </text>
+  <rect x="340" y="1368" width="760" height="240" rx="12" fill="#F0F4F8" stroke="#E2E8EE" stroke-width="1" stroke-dasharray="6,3"/>
+  <text x="720" y="1484" font-size="12" fill="#9AAFBF" text-anchor="middle">Analysis image placeholder</text>
+  <text x="720" y="1502" font-size="10" fill="#B8C9D4" text-anchor="middle">Add image to /public/images/ikea-master-material-library/</text>
+
+  <!-- Process: Key User Flows -->
+  <text x="340" y="1652" font-size="15" font-weight="600" fill="#1a1a1a">Key User Flows</text>
+  <text font-size="13.5" fill="#555555">
+    <tspan x="340" y="1676">Three main user flows were designed and tested across different user groups and material types.</tspan>
+    <tspan x="340" dy="20">1. Explore Materials Plus — Browse, search and filter the full catalogue.</tspan>
+    <tspan x="340" dy="20">2. Request New Material Flow — Submit a request for a new material.</tspan>
+    <tspan x="340" dy="20">3. Create &amp; Manage Materials Flow — Create and manage materials within the system.</tspan>
+  </text>
+  <rect x="340" y="1764" width="760" height="240" rx="12" fill="#F0F4F8" stroke="#E2E8EE" stroke-width="1" stroke-dasharray="6,3"/>
+  <text x="720" y="1880" font-size="12" fill="#9AAFBF" text-anchor="middle">User flows image placeholder</text>
+
+  <!-- Process: Validation & Iteration -->
+  <text x="340" y="2048" font-size="15" font-weight="600" fill="#1a1a1a">Validation &amp; Iteration</text>
+  <text font-size="13.5" fill="#555555">
+    <tspan x="340" y="2072">Each design iteration was validated through usability testing and stakeholder feedback sessions.</tspan>
+    <tspan x="340" dy="20">Findings from each round were used to refine the interface before the next iteration.</tspan>
+  </text>
+  <rect x="340" y="2112" width="760" height="240" rx="12" fill="#F0F4F8" stroke="#E2E8EE" stroke-width="1" stroke-dasharray="6,3"/>
+  <text x="720" y="2228" font-size="12" fill="#9AAFBF" text-anchor="middle">Validation image placeholder</text>
+
+  <!-- ── FINAL SOLUTION ──────────────────────────────────────── -->
+  <text x="340" y="2396" font-size="20" font-weight="700" fill="#1a1a1a">Final solution</text>
+
+  <!-- Solution item 1 -->
+  <rect x="340" y="2420" width="760" height="300" rx="12" fill="#F0F4F8" stroke="#E2E8EE" stroke-width="1" stroke-dasharray="6,3"/>
+  <text x="720" y="2566" font-size="12" fill="#9AAFBF" text-anchor="middle">Solution screen 1</text>
+  <text x="340" y="2742" font-size="12" fill="#555555">
+    <tspan font-weight="600" fill="#1a1a1a">1</tspan> — Home — offering templates for quick navigation, filters and previews ensuring overall flow efficiency.
+  </text>
+
+  <!-- Solution item 2 -->
+  <rect x="340" y="2772" width="760" height="300" rx="12" fill="#F0F4F8" stroke="#E2E8EE" stroke-width="1" stroke-dasharray="6,3"/>
+  <text x="720" y="2918" font-size="12" fill="#9AAFBF" text-anchor="middle">Solution screen 2</text>
+  <text x="340" y="3094" font-size="12" fill="#555555">
+    <tspan font-weight="600" fill="#1a1a1a">2</tspan> — List result — detailed list view providing multiple properties, filters and logistic information.
+  </text>
+
+  <!-- ── OUTCOME ─────────────────────────────────────────────── -->
+  <text x="340" y="3148" font-size="20" font-weight="700" fill="#1a1a1a">Outcome</text>
+  <text font-size="14" fill="#555555">
+    <tspan x="340" y="3178">The redesigned platform improved how IKEA teams access, manage and collaborate around material data.</tspan>
+  </text>
+
+  <!-- Outcome bullet points -->
+  <circle cx="348" cy="3208" r="3" fill="#7B2FBE"/>
+  <text x="360" y="3213" font-size="13.5" fill="#555555">Adoption increased significantly across material management teams</text>
+  <circle cx="348" cy="3232" r="3" fill="#7B2FBE"/>
+  <text x="360" y="3237" font-size="13.5" fill="#555555">Team efficiency improved through streamlined workflows</text>
+  <circle cx="348" cy="3256" r="3" fill="#7B2FBE"/>
+  <text x="360" y="3261" font-size="13.5" fill="#555555">Reduced duplication in material cataloguing</text>
+
+  <!-- ── FOOTER NAVIGATION ───────────────────────────────────── -->
+  <line x1="80" y1="3340" x2="1360" y2="3340" stroke="#E5E5E5" stroke-width="1"/>
+  <text x="80" y="3372" font-size="12" fill="#555555">← Previous project</text>
+  <text x="1360" y="3372" font-size="12" fill="#555555" text-anchor="end">Next project →</text>
+
+</svg>

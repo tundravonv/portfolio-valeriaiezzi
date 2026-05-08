@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="390" height="4960" viewBox="0 0 390 4960"
+     xmlns="http://www.w3.org/2000/svg"
+     font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">
+
+  <rect width="390" height="4960" fill="#FFFFFF"/>
+
+  <!-- ── HEADER ─────────────────────────────────────────── -->
+  <text x="24" y="36" font-size="11" fill="#555555">Valeria Iezzi ©2026</text>
+
+  <!-- ── HERO ───────────────────────────────────────────── -->
+
+  <!-- Profile photo (small, top right) -->
+  <circle cx="318" cy="108" r="52" fill="#E2E8EE"/>
+  <circle cx="318" cy="90" r="18" fill="#B0BCCA"/>
+  <ellipse cx="318" cy="132" rx="28" ry="20" fill="#B0BCCA"/>
+
+  <!-- Hi! -->
+  <text x="24" y="88" font-size="38" font-weight="700" fill="#7B2FBE" letter-spacing="-0.5">Hi!</text>
+  <!-- I'm Valeria, and -->
+  <text x="24" y="132" font-size="32" font-weight="700" fill="#1a1a1a" letter-spacing="-0.5">I'm Valeria, and</text>
+  <!-- I'm a + Senior Digital Product Designer. -->
+  <text x="24" y="172" font-size="32" font-weight="700" fill="#1a1a1a" letter-spacing="-0.5">I'm a</text>
+  <text x="24" y="212" font-size="32" font-weight="700" fill="#7B2FBE" letter-spacing="-0.5">Senior Digital</text>
+  <text x="24" y="252" font-size="32" font-weight="700" fill="#7B2FBE" letter-spacing="-0.5">Product Designer.</text>
+
+  <!-- Bio para 1 -->
+  <text font-size="13.5" fill="#555555">
+    <tspan x="24" y="290">I'm a Senior Digital Product Designer with 7+ years</tspan>
+    <tspan x="24" dy="21">of experience turning user needs into intuitive digital</tspan>
+    <tspan x="24" dy="21">products. I combine UX research, interaction design,</tspan>
+    <tspan x="24" dy="21">and visual design to make complex systems feel clear.</tspan>
+  </text>
+
+  <!-- Bio para 2 -->
+  <text font-size="13.5" fill="#555555">
+    <tspan x="24" y="386">My experience spans enterprise platforms, mobile</tspan>
+    <tspan x="24" dy="21">applications, and digital tools. I work closely with</tspan>
+    <tspan x="24" dy="21">engineers, product managers, and stakeholders.</tspan>
+  </text>
+
+  <!-- Core skills label -->
+  <text x="24" y="458" font-size="13" font-weight="600" fill="#1a1a1a">Core skills:</text>
+
+  <!-- Tags row 1 -->
+  <rect x="24" y="466" width="92" height="22" rx="11" fill="#EDE9FE" stroke="#C4B5FD" stroke-width="1"/>
+  <text x="70" y="481" font-size="11" font-weight="500" fill="#6D28D9" text-anchor="middle">UX research</text>
+  <rect x="124" y="466" width="76" height="22" rx="11" fill="#EDE9FE" stroke="#C4B5FD" stroke-width="1"/>
+  <text x="162" y="481" font-size="11" font-weight="500" fill="#6D28D9" text-anchor="middle">UI Design</text>
+  <!-- Tags row 2 -->
+  <rect x="24" y="496" width="104" height="22" rx="11" fill="#FCE7F3" stroke="#F9A8D4" stroke-width="1"/>
+  <text x="76" y="511" font-size="11" font-weight="500" fill="#BE185D" text-anchor="middle">Service Design</text>
+  <rect x="136" y="496" width="103" height="22" rx="11" fill="#FEF3C7" stroke="#FCD34D" stroke-width="1"/>
+  <text x="187" y="511" font-size="11" font-weight="500" fill="#92400E" text-anchor="middle">Design System</text>
+
+  <!-- ── SELECTED WORKS ─────────────────────────────────── -->
+  <text x="24" y="562"
+        font-family="Georgia, 'Playfair Display', 'Times New Roman', serif"
+        font-style="italic" font-size="28" font-weight="400" fill="#1a1a1a">Selected works</text>
+
+  <!-- ── CARD 1: IKEA (y=588) ──────────────────────────── -->
+  <!-- Text section -->
+  <rect x="24" y="588" width="342" height="220" rx="16" fill="#F7F7F7"/>
+  <!-- IKEA logo -->
+  <rect x="48" y="614" width="46" height="24" rx="3" fill="#0051BA"/>
+  <text x="71" y="630" font-size="11" font-weight="900" fill="#FFCC00" text-anchor="middle">IKEA</text>
+  <!-- Title -->
+  <text x="48" y="670" font-size="17" font-weight="700" fill="#1a1a1a">Master Material Library</text>
+  <!-- Tags -->
+  <rect x="48" y="680" width="88" height="20" rx="10" fill="#EDE9FE" stroke="#C4B5FD" stroke-width="1"/>
+  <text x="92" y="694" font-size="10" font-weight="500" fill="#6D28D9" text-anchor="middle">UX research</text>
+  <rect x="144" y="680" width="72" height="20" rx="10" fill="#EDE9FE" stroke="#C4B5FD" stroke-width="1"/>
+  <text x="180" y="694" font-size="10" font-weight="500" fill="#6D28D9" text-anchor="middle">UI Design</text>
+  <rect x="48" y="706" width="99" height="20" rx="10" fill="#FEF3C7" stroke="#FCD34D" stroke-width="1"/>
+  <text x="97" y="720" font-size="10" font-weight="500" fill="#92400E" text-anchor="middle">Design System</text>
+  <rect x="155" y="706" width="100" height="20" rx="10" fill="#FCE7F3" stroke="#F9A8D4" stroke-width="1"/>
+  <text x="205" y="720" font-size="10" font-weight="500" fill="#BE185D" text-anchor="middle">Service Design</text>
+  <!-- Description -->
+  <text font-size="12.5" fill="#555555">
+    <tspan x="48" y="748">Redesign and transformation of IKEA's material</tspan>
+    <tspan x="48" dy="18">management system into a scalable platform.</tspan>
+  </text>
+  <!-- Button -->
+  <rect x="48" y="782" width="112" height="26" rx="13" fill="#1a1a1a"/>
+  <text x="104" y="799" font-size="10.5" font-weight="500" fill="#FFFFFF" text-anchor="middle">View project →</text>
+  <!-- Image section -->
+  <rect x="24" y="820" width="342" height="180" rx="0" fill="#E2E8EE"/>
+  <rect x="24" y="820" width="342" height="180" rx="16" fill="#E2E8EE" clip-path="url(#card1-mobile-clip)"/>
+  <clipPath id="card1-mobile-clip"><rect x="24" y="820" width="342" height="180" rx="0"/></clipPath>
+  <text x="195" y="906" font-size="11" fill="#9AAFBF" text-anchor="middle">Project image</text>
+  <text x="195" y="922" font-size="9.5" fill="#B8C9D4" text-anchor="middle">/public/images/ikea-card.png</text>
+  <!-- Bottom rounding overlay -->
+  <path d="M24,980 L24,996 Q24,1000 28,1000 L362,1000 Q366,1000 366,996 L366,980 Z" fill="#E2E8EE"/>
+  <rect x="24" y="980" width="342" height="20" rx="0" fill="#E2E8EE"/>
+
+  <!-- ── CARD 2: SUITSUPPLY (y=1024) ───────────────────── -->
+  <rect x="24" y="1024" width="342" height="200" rx="16" fill="#F7F7F7"/>
+  <text x="48" y="1054" font-size="9" font-weight="700" fill="#1a1a1a" letter-spacing="2">SUITSUPPLY</text>
+  <text x="48" y="1096" font-size="17" font-weight="700" fill="#1a1a1a">Insights App</text>
+  <rect x="48" y="1106" width="88" height="20" rx="10" fill="#EDE9FE" stroke="#C4B5FD" stroke-width="1"/>
+  <text x="92" y="1120" font-size="10" font-weight="500" fill="#6D28D9" text-anchor="middle">UX research</text>
+  <rect x="144" y="1106" width="72" height="20" rx="10" fill="#EDE9FE" stroke="#C4B5FD" stroke-width="1"/>
+  <text x="180" y="1120" font-size="10" font-weight="500" fill="#6D28D9" text-anchor="middle">UI Design</text>
+  <rect x="48" y="1132" width="99" height="20" rx="10" fill="#FEF3C7" stroke="#FCD34D" stroke-width="1"/>
+  <text x="97" y="1146" font-size="10" font-weight="500" fill="#92400E" text-anchor="middle">Design System</text>
+  <text font-size="12.5" fill="#555555">
+    <tspan x="48" y="1170">Building of an app that transforms complex retail</tspan>
+    <tspan x="48" dy="18">performance data into actionable insights.</tspan>
+  </text>
+  <rect x="48" y="1200" width="112" height="26" rx="13" fill="#1a1a1a"/>
+  <text x="104" y="1217" font-size="10.5" font-weight="500" fill="#FFFFFF" text-anchor="middle">View project →</text>
+  <!-- Image -->
+  <rect x="24" y="1236" width="342" height="160" rx="16" fill="#E2E8EE"/>
+  <text x="195" y="1312" font-size="11" fill="#9AAFBF" text-anchor="middle">Project image</text>
+  <text x="195" y="1328" font-size="9.5" fill="#B8C9D4" text-anchor="middle">/public/images/suitsupply-card.png</text>
+
+  <!-- ── CARD 3: SANDVIK (y=1420) ───────────────────────── -->
+  <rect x="24" y="1420" width="342" height="200" rx="16" fill="#F7F7F7"/>
+  <circle cx="36" cy="1456" r="9" fill="none" stroke="#1a1a1a" stroke-width="1.5"/>
+  <line x1="36" y1="1447" x2="36" y2="1465" stroke="#1a1a1a" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="27" y1="1456" x2="45" y2="1456" stroke="#1a1a1a" stroke-width="1.5" stroke-linecap="round"/>
+  <text x="52" y="1461" font-size="9" font-weight="700" fill="#1a1a1a" letter-spacing="1.5">SANDVIK</text>
+  <text x="48" y="1494" font-size="17" font-weight="700" fill="#1a1a1a">PlantDesigner Web</text>
+  <rect x="48" y="1504" width="88" height="20" rx="10" fill="#EDE9FE" stroke="#C4B5FD" stroke-width="1"/>
+  <text x="92" y="1518" font-size="10" font-weight="500" fill="#6D28D9" text-anchor="middle">UX research</text>
+  <rect x="144" y="1504" width="72" height="20" rx="10" fill="#EDE9FE" stroke="#C4B5FD" stroke-width="1"/>
+  <text x="180" y="1518" font-size="10" font-weight="500" fill="#6D28D9" text-anchor="middle">UI Design</text>
+  <rect x="48" y="1530" width="99" height="20" rx="10" fill="#FEF3C7" stroke="#FCD34D" stroke-width="1"/>
+  <text x="97" y="1544" font-size="10" font-weight="500" fill="#92400E" text-anchor="middle">Design System</text>
+  <text font-size="12.5" fill="#555555">
+    <tspan x="48" y="1568">Redesign of Sandvik's PlantDesigner platform to</tspan>
+    <tspan x="48" dy="18">improve usability and support collaboration.</tspan>
+  </text>
+  <rect x="48" y="1598" width="112" height="26" rx="13" fill="#1a1a1a"/>
+  <text x="104" y="1615" font-size="10.5" font-weight="500" fill="#FFFFFF" text-anchor="middle">View project →</text>
+  <rect x="24" y="1632" width="342" height="160" rx="16" fill="#E2E8EE"/>
+  <text x="195" y="1708" font-size="11" fill="#9AAFBF" text-anchor="middle">Project image</text>
+  <text x="195" y="1724" font-size="9.5" fill="#B8C9D4" text-anchor="middle">/public/images/sandvik-card.png</text>
+
+  <!-- ── CARD 4: ASSA ABLOY (y=1816) ───────────────────── -->
+  <rect x="24" y="1816" width="342" height="220" rx="16" fill="#F7F7F7"/>
+  <text x="48" y="1848" font-size="9" font-weight="700" fill="#1a1a1a" letter-spacing="1.5">ASSA ABLOY</text>
+  <text x="48" y="1888" font-size="17" font-weight="700" fill="#1a1a1a">Lock-installation Apps</text>
+  <rect x="48" y="1898" width="88" height="20" rx="10" fill="#EDE9FE" stroke="#C4B5FD" stroke-width="1"/>
+  <text x="92" y="1912" font-size="10" font-weight="500" fill="#6D28D9" text-anchor="middle">UX research</text>
+  <rect x="144" y="1898" width="72" height="20" rx="10" fill="#EDE9FE" stroke="#C4B5FD" stroke-width="1"/>
+  <text x="180" y="1912" font-size="10" font-weight="500" fill="#6D28D9" text-anchor="middle">UI Design</text>
+  <rect x="48" y="1924" width="99" height="20" rx="10" fill="#FEF3C7" stroke="#FCD34D" stroke-width="1"/>
+  <text x="97" y="1938" font-size="10" font-weight="500" fill="#92400E" text-anchor="middle">Design System</text>
+  <rect x="155" y="1924" width="100" height="20" rx="10" fill="#FCE7F3" stroke="#F9A8D4" stroke-width="1"/>
+  <text x="205" y="1938" font-size="10" font-weight="500" fill="#BE185D" text-anchor="middle">Service Design</text>
+  <text font-size="12.5" fill="#555555">
+    <tspan x="48" y="1962">Designing an advanced website and a mobile app for</tspan>
+    <tspan x="48" dy="18">allowing locks installations, solving key user challenges.</tspan>
+  </text>
+  <rect x="48" y="2010" width="112" height="26" rx="13" fill="#1a1a1a"/>
+  <text x="104" y="2027" font-size="10.5" font-weight="500" fill="#FFFFFF" text-anchor="middle">View project →</text>
+  <rect x="24" y="2048" width="342" height="160" rx="16" fill="#E2E8EE"/>
+  <text x="195" y="2124" font-size="11" fill="#9AAFBF" text-anchor="middle">Project image</text>
+  <text x="195" y="2140" font-size="9.5" fill="#B8C9D4" text-anchor="middle">/public/images/assa-abloy-card.png</text>
+
+  <!-- ── CARD 5: Grocery (y=2232) ──────────────────────── -->
+  <rect x="24" y="2232" width="342" height="196" rx="16" fill="#F7F7F7"/>
+  <text x="48" y="2276" font-size="17" font-weight="700" fill="#1a1a1a">Sustainable Grocery App</text>
+  <rect x="48" y="2286" width="88" height="20" rx="10" fill="#EDE9FE" stroke="#C4B5FD" stroke-width="1"/>
+  <text x="92" y="2300" font-size="10" font-weight="500" fill="#6D28D9" text-anchor="middle">UX research</text>
+  <rect x="144" y="2286" width="72" height="20" rx="10" fill="#EDE9FE" stroke="#C4B5FD" stroke-width="1"/>
+  <text x="180" y="2300" font-size="10" font-weight="500" fill="#6D28D9" text-anchor="middle">UI Design</text>
+  <text font-size="12.5" fill="#555555">
+    <tspan x="48" y="2324">Designing an app for showcasing products' details</tspan>
+    <tspan x="48" dy="18">and their carbon footprint in the grocery shop.</tspan>
+  </text>
+  <rect x="48" y="2394" width="112" height="26" rx="13" fill="#1a1a1a"/>
+  <text x="104" y="2411" font-size="10.5" font-weight="500" fill="#FFFFFF" text-anchor="middle">View project →</text>
+  <rect x="24" y="2440" width="342" height="160" rx="16" fill="#E2E8EE"/>
+  <text x="195" y="2516" font-size="11" fill="#9AAFBF" text-anchor="middle">Project image</text>
+  <text x="195" y="2532" font-size="9.5" fill="#B8C9D4" text-anchor="middle">/public/images/grocery-card.png</text>
+
+  <!-- ── COMING SOON ─────────────────────────────────────── -->
+  <line x1="24" y1="2624" x2="366" y2="2624" stroke="#E5E5E5" stroke-width="1"/>
+
+  <!-- ario -->
+  <rect x="24" y="2640" width="78" height="20" rx="10" fill="#F3F4F6" stroke="#E5E5E5" stroke-width="1"/>
+  <text x="63" y="2654" font-size="9.5" fill="#555555" text-anchor="middle" font-weight="500">Coming soon</text>
+  <text x="114" y="2655" font-size="13" font-weight="700" fill="#1a1a1a">ario</text>
+  <text x="144" y="2655" font-size="11.5" fill="#AAAAAA">2025</text>
+  <text x="172" y="2655" font-size="11.5" fill="#555555">Web app for health product</text>
+
+  <!-- LAGKAGEHUSET -->
+  <rect x="24" y="2672" width="78" height="20" rx="10" fill="#F3F4F6" stroke="#E5E5E5" stroke-width="1"/>
+  <text x="63" y="2686" font-size="9.5" fill="#555555" text-anchor="middle" font-weight="500">Coming soon</text>
+  <text x="114" y="2687" font-size="9" font-weight="700" fill="#1a1a1a" letter-spacing="1">LAGKAGEHUSET</text>
+  <text x="240" y="2687" font-size="11.5" fill="#AAAAAA">2024</text>
+  <text x="268" y="2687" font-size="11.5" fill="#555555">Dashboard KPIs</text>
+
+  <!-- ── FOOTER ─────────────────────────────────────────── -->
+  <rect x="155" y="2728" width="80" height="28" rx="14" fill="#FFFFFF" stroke="#E5E5E5" stroke-width="1.5"/>
+  <text x="195" y="2747" font-size="11" fill="#555555" text-anchor="middle">Top ↑</text>
+  <text x="366" y="2800" font-size="11" fill="#555555" text-anchor="end">Valeria Iezzi ©2026</text>
+
+</svg>
