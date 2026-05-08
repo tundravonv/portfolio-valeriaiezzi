@@ -50,13 +50,13 @@ function ProjectLogo({ project }: { project: any }) {
   let logoSrc = "";
 
   if (title.includes("master material") || logoKey.includes("ikea")) {
-    logoSrc = "/Logos/IKEA-Logo.png";
+    logoSrc = "/images/Logos/IKEA-Logo.png";
   } else if (title.includes("insights") || logoKey.includes("suitsupply")) {
-    logoSrc = "/Logos/suitsupply-logo.png";
+    logoSrc = "/images/Logos/suitsupply-logo.png";
   } else if (title.includes("plantdesigner") || logoKey.includes("sandvik")) {
-    logoSrc = "/Logos/sandvik-logo.png";
+    logoSrc = "/images/Logos/sandvik-logo.png";
   } else if (title.includes("lock") || logoKey.includes("assa")) {
-    logoSrc = "/Logos/Assa-abloy-logo.png";
+    logoSrc = "/images/Logos/Assa-abloy-logo.png";
   }
 
   if (logoSrc) {
@@ -90,13 +90,13 @@ function ComingSoonLogo({ item }: { item: any }) {
   let logoSrc = "";
 
   if (text.includes("arjo") || text.includes("ario")) {
-    logoSrc = "/Logos/Arjo-Logo.png";
+    logoSrc = "/images/Logos/Arjo-Logo.png";
   } else if (
     text.includes("lagkagehuset") ||
     text.includes("lagkage") ||
     text.includes("lagkagehuset")
   ) {
-    logoSrc = "/Logos/Lagkagehuset-logo.png";
+    logoSrc = "/images/Logos/Lagkagehuset-logo.png";
   }
 
   if (logoSrc) {
