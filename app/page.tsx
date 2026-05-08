@@ -235,7 +235,7 @@ export default function Home() {
                         <div className="mt-8">
                           <Link
                             href={`/projects/${project.slug}`}
-                            className="inline-flex items-center gap-1 rounded-full bg-ink px-5 py-2.5 text-sm font-medium text-white transition-colors hover:bg-accent"
+                            className="inline-flex items-center gap-1 rounded-full bg-ink px-5 py-2.5 text-sm font-medium text-white transition-colors hover:bg-[#3a3a3a]"
                           >
                             View project →
                           </Link>
