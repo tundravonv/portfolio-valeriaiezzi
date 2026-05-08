@@ -175,7 +175,7 @@ export default function Home() {
                     alt="Valeria Iezzi"
                     width={224}
                     height={224}
-                    className="h-full w-full object-cover"
+                    className="h-full w-full object-cover object-top"
                     priority
                   />
                 ) : (
