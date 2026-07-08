@@ -11,21 +11,20 @@ const config: Config = {
     extend: {
       fontFamily: {
         sans: ["var(--font-instrument-sans)", "system-ui", "sans-serif"],
-        display: ["var(--font-instrument-sans)", "system-ui", "sans-serif"],
+        display: ["var(--font-instrument-serif)", "Georgia", "serif"],
       },
       colors: {
         ink: {
-          DEFAULT: "#1a1a1a",
-          secondary: "#555555",
+          DEFAULT: "#2F2A2A",
+          secondary: "#615476",
           muted: "#AAAAAA",
         },
         accent: {
           DEFAULT: "#7B2FBE",
-          hover: "#6B21A8",
         },
         surface: {
-          DEFAULT: "#FFFFFF",
-          card: "#F7F7F7",
+          DEFAULT: "#FAF6EE",
+          card: "#F2EDE4",
         },
         border: "#E5E5E5",
       },

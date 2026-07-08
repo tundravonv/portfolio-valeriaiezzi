@@ -7,14 +7,22 @@ html {
 }
 
 body {
-  background-color: #ffffff;
-  color: #1a1a1a;
+  background-color: #FAF6EE;
+  color: #2F2A2A;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
+/* Hide scrollbar for horizontal card scroll */
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
 /* ── Tag colour variants ────────────────────────────────── */
-/* Usage: <Tag variant="ux-research" /> etc. */
 .tag-purple {
   color: #6D28D9;
   background-color: #EDE9FE;

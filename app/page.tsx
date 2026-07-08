@@ -1,302 +1,152 @@
 import Link from "next/link";
 import Image from "next/image";
-import Tag from "@/components/Tag";
-import CompanyLogo from "@/components/CompanyLogo";
-import {
-  siteConfig,
-  heroCopy,
-  projects,
-  comingSoonProjects,
-} from "@/content/data";
+import { projects } from "@/content/data";
 
-const cardImages: Record<string, string> = {
-  "master-material-library": "/images/ikea-card.png",
-  "insights-app": "/images/suitsupply-card.png",
-  "plantdesigner-web": "/images/sandvik-card.png",
-  "lock-installation-apps": "/images/assa-abloy-card.png",
+const projectImages: Record<string, string> = {
+  "ikea-master-material-library": "/images/ikea-card.png",
+  "suitsupply-insights-app": "/images/suitsupply-card.png",
+  "sandvik-plantdesigner-web": "/images/sandvik-card.png",
+  "assa-abloy-lock-installation": "/images/assa-abloy-card.png",
   "sustainable-grocery-app": "/images/grocery-card.png",
 };
 
-function getProjectImage(project: any) {
-  const title = String(project.title || "").toLowerCase();
-
-  if (title.includes("master material")) {
-    return "/images/ikea-card.png";
-  }
-
-  if (title.includes("insights")) {
-    return "/images/suitsupply-card.png";
-  }
-
-  if (title.includes("plantdesigner")) {
-    return "/images/sandvik-card.png";
-  }
-
-  if (title.includes("lock")) {
-    return "/images/assa-abloy-card.png";
-  }
-
-  if (title.includes("grocery")) {
-    return "/images/grocery-card.png";
-  }
-
-  return cardImages[project.slug] || project.cardImage || "/images/ikea-card.png";
-}
-
-function ProjectLogo({ project }: { project: any }) {
-  const title = String(project.title || "").toLowerCase();
-  const logoKey = String(project.logoKey || "").toLowerCase();
-
-  let logoSrc = "";
-
-  if (title.includes("master material") || logoKey.includes("ikea")) {
-    logoSrc = "/images/Logos/IKEA-Logo.png";
-  } else if (title.includes("insights") || logoKey.includes("suitsupply")) {
-    logoSrc = "/images/Logos/suitsupply-logo.png";
-  } else if (title.includes("plantdesigner") || logoKey.includes("sandvik")) {
-    logoSrc = "/images/Logos/sandvik-logo.png";
-  } else if (title.includes("lock") || logoKey.includes("assa")) {
-    logoSrc = "/images/Logos/Assa-abloy-logo.png";
-  }
-
-  if (logoSrc) {
-    return (
-      <div className="mb-5 flex h-8 items-center">
-        <img
-          src={logoSrc}
-          alt={`${project.title} logo`}
-          className="max-h-8 max-w-[160px] object-contain"
-        />
-      </div>
-    );
-  }
-
-  if (project.logoKey) {
-    return (
-      <div className="mb-5">
-        <CompanyLogo logoKey={project.logoKey} />
-      </div>
-    );
-  }
-
-  return null;
-}
-
-function ComingSoonLogo({ item }: { item: any }) {
-  const text = `${item.logoText || ""} ${item.description || ""} ${item.title || ""}`
-    .toLowerCase()
-    .replace(/\s+/g, "");
-
-  let logoSrc = "";
-
-  if (text.includes("arjo") || text.includes("ario")) {
-    logoSrc = "/images/Logos/Arjo-Logo.png";
-  } else if (
-    text.includes("lagkagehuset") ||
-    text.includes("lagkage") ||
-    text.includes("lagkagehuset")
-  ) {
-    logoSrc = "/images/Logos/Lagkagehuset-logo.png";
-  }
-
-  if (logoSrc) {
-    return (
-      <div className="flex h-6 min-w-[140px] items-center">
-        <img
-          src={logoSrc}
-          alt={`${item.logoText} logo`}
-          className="max-h-6 max-w-[140px] object-contain"
-        />
-      </div>
-    );
-  }
-
+function AsteriskLogo() {
   return (
-    <span
-      className={`font-bold text-ink ${
-        item.logoStyle === "ario"
-          ? "text-base tracking-tight"
-          : "text-xs uppercase tracking-[0.15em]"
-      }`}
+    <svg
+      viewBox="0 0 40 40"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      className="w-9 h-9"
+      aria-hidden="true"
     >
-      {item.logoText}
-    </span>
+      <line x1="20" y1="3" x2="20" y2="37" stroke="#2F2A2A" strokeWidth="2.5" strokeLinecap="round" />
+      <line x1="3" y1="20" x2="37" y2="20" stroke="#2F2A2A" strokeWidth="2.5" strokeLinecap="round" />
+      <line x1="7.39" y1="7.39" x2="32.61" y2="32.61" stroke="#2F2A2A" strokeWidth="2.5" strokeLinecap="round" />
+      <line x1="32.61" y1="7.39" x2="7.39" y2="32.61" stroke="#2F2A2A" strokeWidth="2.5" strokeLinecap="round" />
+    </svg>
   );
 }
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-white text-ink">
-      <div className="mx-auto w-full max-w-6xl px-5 sm:px-6 lg:px-10">
-        {/* Header */}
-        <header className="pt-5 pb-10 sm:pb-14">
-          <span className="text-xs text-ink-secondary">
-            {siteConfig.name} ©{siteConfig.year}
-          </span>
-        </header>
+    <main className="min-h-screen bg-[#FAF6EE]">
 
-        {/* Hero */}
-        <section className="pb-16 sm:pb-20 lg:pb-24">
-          <div className="grid grid-cols-1 gap-10 md:grid-cols-[1fr_auto] md:items-start md:gap-14 lg:gap-20">
-            <div className="max-w-3xl">
-              <h1 className="font-bold tracking-tight leading-[1.02] text-[38px] sm:text-[48px] lg:text-[64px]">
-                <span className="block text-accent">Hi!</span>
-                <span className="block text-ink">I&apos;m Valeria, and</span>
-                <span className="block text-ink">
-                  I&apos;m a{" "}
-                  <span className="text-accent">
-                    Senior Digital Product Designer.
-                  </span>
-                </span>
-              </h1>
+      {/* ── Navigation ─────────────────────────────────────── */}
+      <nav className="flex items-center justify-between px-6 sm:px-10 h-[66px]">
+        <AsteriskLogo />
+        <div className="flex items-center gap-12 sm:gap-[72px] font-display italic text-[24px] sm:text-[32px] text-[#2F2A2A] leading-none">
+          <Link href="#work" className="underline underline-offset-4">Work</Link>
+          <Link href="#me">Me</Link>
+        </div>
+      </nav>
 
-              <div className="mt-8 max-w-2xl space-y-4 text-base leading-relaxed text-ink-secondary sm:text-lg">
-                <p>{heroCopy.bio1}</p>
-                <p>{heroCopy.bio2}</p>
-              </div>
+      {/* ── Hero ───────────────────────────────────────────── */}
+      <section id="me" className="px-6 sm:px-10 pt-8 pb-16 lg:pb-24">
+        <div className="flex flex-col md:flex-row items-start justify-between gap-10 lg:gap-20">
 
-              <div className="mt-7 flex flex-wrap items-center gap-2">
-                <span className="mr-1 text-sm font-semibold text-ink">
-                  Core skills:
-                </span>
-
-                {heroCopy.coreSkills.map((skill) => (
-                  <Tag key={skill.label} label={skill.label} color={skill.color} />
-                ))}
-              </div>
-            </div>
-
-            {/* Profile photo */}
-            <div className="flex justify-start md:justify-end">
-              <div className="h-36 w-36 overflow-hidden rounded-full border border-border bg-surface-card sm:h-44 sm:w-44 md:h-48 md:w-48 lg:h-56 lg:w-56">
-                {heroCopy.photo ? (
-                  <Image
-                    src={heroCopy.photo}
-                    alt="Valeria Iezzi"
-                    width={224}
-                    height={224}
-                    className="h-full w-full object-cover object-top"
-                    priority
-                  />
-                ) : (
-                  <div className="flex h-full w-full items-center justify-center px-4 text-center text-xs leading-tight text-ink-muted">
-                    Add photo
-                    <br />
-                    /public/photo.jpg
-                  </div>
-                )}
-              </div>
+          {/* Text */}
+          <div className="flex flex-col gap-6 max-w-[848px]">
+            <h1 className="font-sans font-bold text-[38px] sm:text-[42px] leading-[1.3] text-[#2F2A2A]">
+              Ciao! I&apos;m Valeria and<br />
+              I&apos;m a Digital Product Designer
+            </h1>
+            <div className="flex flex-col gap-4 text-[#615476] font-medium text-base sm:text-[20px] leading-[32px] tracking-[-0.42px]">
+              <p>
+                With 5+ years of experience, I design digital products across internal
+                tools, e-commerce, retail, analytics and complex platforms.
+              </p>
+              <p>
+                My work combines UX research, product discovery, interaction design and
+                polished UI execution. I help teams turn complex workflows and user needs
+                into clear, scalable and innovative product experiences.
+              </p>
             </div>
           </div>
-        </section>
 
-        {/* Selected works */}
-        <section className="pb-20 sm:pb-24">
-          <h2 className="mb-8 text-4xl italic text-ink sm:mb-10 sm:text-5xl">
+          {/* Profile photo */}
+          <div className="flex-shrink-0 w-[220px] h-[220px] sm:w-[280px] sm:h-[280px] lg:w-[313px] lg:h-[313px] rounded-full overflow-hidden shadow-[2px_2px_20px_rgba(208,208,208,0.3)]">
+            <Image
+              src="/photo.png"
+              alt="Valeria Iezzi"
+              width={313}
+              height={313}
+              className="w-full h-full object-cover object-top"
+              priority
+            />
+          </div>
+
+        </div>
+      </section>
+
+      {/* ── Selected works ─────────────────────────────────── */}
+      <section id="work" className="pb-16">
+
+        <div className="px-6 sm:px-10 mb-8">
+          <h2 className="font-display italic text-[42px] sm:text-[52px] leading-[1.2] text-[#2F2A2A]">
             Selected works
           </h2>
+        </div>
 
-          <div className="grid grid-cols-1 gap-6">
-            {projects
-              .filter((project) => project.featured)
-              .map((project) => {
-                const imageSrc = getProjectImage(project);
+        {/* Horizontal scrolling card row */}
+        <div className="flex gap-6 sm:gap-8 overflow-x-auto scrollbar-hide snap-x snap-mandatory px-6 sm:px-10 pb-6">
+          {projects
+            .filter((p) => p.featured)
+            .map((project) => {
+              const imageSrc = projectImages[project.slug] ?? project.cardImage ?? "";
+              return (
+                <Link
+                  key={project.slug}
+                  href={`/projects/${project.slug}`}
+                  className="relative flex-shrink-0 w-[82vw] sm:w-[480px] lg:w-[560px] h-[560px] sm:h-[600px] lg:h-[640px] rounded-[22px] overflow-hidden snap-start block group"
+                >
+                  {/* Background image */}
+                  {imageSrc && (
+                    <Image
+                      src={imageSrc}
+                      alt={project.title}
+                      fill
+                      className="object-cover transition-transform duration-500 group-hover:scale-[1.03]"
+                      sizes="(max-width: 640px) 82vw, (max-width: 1024px) 480px, 560px"
+                    />
+                  )}
 
-                return (
-                  <article
-                    key={project.slug}
-                    className="overflow-hidden rounded-3xl bg-surface-card"
-                  >
-                    <div className="grid grid-cols-1 md:grid-cols-[0.9fr_1.15fr]">
-                      {/* Text column */}
-                      <div className="flex min-h-[330px] flex-col justify-between p-6 sm:p-8 lg:p-10">
-                        <div>
-                          <ProjectLogo project={project} />
+                  {/* Dark gradient overlay — matches Figma */}
+                  <div className="absolute inset-0 bg-gradient-to-b from-transparent from-[17%] to-[rgba(2,60,120,0.65)]" />
 
-                          <h3 className="mb-5 max-w-2xl text-2xl font-bold leading-tight text-ink sm:text-3xl">
-                            {project.title}
-                          </h3>
-
-                          <div className="mb-5 flex flex-wrap gap-2">
-                            {project.tags.map((tag) => (
-                              <Tag
-                                key={tag.label}
-                                label={tag.label}
-                                color={tag.color}
-                              />
-                            ))}
-                          </div>
-
-                          <p className="max-w-2xl text-base leading-relaxed text-ink-secondary">
-                            {project.description}
-                          </p>
-                        </div>
-
-                        <div className="mt-8">
-                          <Link
-                            href={`/projects/${project.slug}`}
-                            className="inline-flex items-center gap-1 rounded-full bg-ink px-5 py-2.5 text-sm font-medium text-white transition-colors hover:bg-[#3a3a3a]"
-                          >
-                            View project →
-                          </Link>
-                        </div>
-                      </div>
-
-                      {/* Image column */}
-                      <div className="relative min-h-[280px] overflow-hidden bg-[#eeeeee] sm:min-h-[340px] md:min-h-full">
-                        <Image
-                          src={imageSrc}
-                          alt={`${project.title} preview`}
-                          fill
-                          sizes="(max-width: 768px) 100vw, 55vw"
-                          className="object-cover object-center"
-                        />
-                      </div>
+                  {/* Card content */}
+                  <div className="absolute bottom-0 left-0 w-full p-6 flex flex-col gap-3">
+                    {project.company && (
+                      <p className="font-display italic text-white text-[34px] sm:text-[38px] leading-tight">
+                        {project.company}
+                      </p>
+                    )}
+                    <p className="text-white font-medium text-[15px] sm:text-[17px] leading-[1.8] tracking-[-0.36px]">
+                      {project.description}
+                    </p>
+                    <div className="flex flex-wrap gap-2 mt-1">
+                      {project.tags.map((tag) => (
+                        <span
+                          key={tag.label}
+                          className="px-[10px] py-[8px] rounded-full border border-white/80 bg-white/5 backdrop-blur-[17px] text-white text-[13px] sm:text-[14px] font-medium leading-none tracking-[-0.3px]"
+                        >
+                          {tag.label}
+                        </span>
+                      ))}
                     </div>
-                  </article>
-                );
-              })}
-          </div>
-        </section>
+                  </div>
+                </Link>
+              );
+            })}
+        </div>
+      </section>
 
-        {/* Coming soon */}
-        <section className="border-t border-border py-10 sm:py-12">
-          <div className="space-y-4">
-            {comingSoonProjects.map((item) => (
-              <div
-                key={item.logoText}
-                className="flex flex-wrap items-center gap-x-4 gap-y-2"
-              >
-                <span className="whitespace-nowrap rounded-full border border-border bg-surface-card px-2.5 py-0.5 text-[10px] font-medium text-ink-secondary">
-                  Coming soon
-                </span>
+      {/* ── Footer ─────────────────────────────────────────── */}
+      <footer className="px-6 sm:px-10 py-6 flex justify-end">
+        <p className="font-sans text-[18px] sm:text-[20px] text-[#2F2A2A] tracking-[-0.42px]">
+          Valeria Iezzi <span className="font-semibold">©2026</span>
+        </p>
+      </footer>
 
-                <ComingSoonLogo item={item} />
-
-                <span className="text-xs text-ink-muted">{item.year}</span>
-
-                <span className="text-xs text-ink-secondary">
-                  {item.description}
-                </span>
-              </div>
-            ))}
-          </div>
-        </section>
-
-        {/* Footer */}
-        <footer className="flex flex-col items-center gap-8 pb-8 pt-8 sm:flex-row sm:justify-between">
-          <a
-            href="#"
-            className="rounded-full border border-border px-4 py-1.5 text-xs text-ink-secondary transition-colors hover:border-ink hover:text-ink"
-          >
-            Top ↑
-          </a>
-
-          <span className="text-xs text-ink-secondary">
-            {siteConfig.name} ©{siteConfig.year}
-          </span>
-        </footer>
-      </div>
     </main>
   );
 }
