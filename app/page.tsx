@@ -1,5 +1,8 @@
+"use client";
+
 import Link from "next/link";
 import Image from "next/image";
+import { useRef } from "react";
 import { projects } from "@/content/data";
 
 const projectImages: Record<string, string> = {
@@ -8,6 +11,14 @@ const projectImages: Record<string, string> = {
   "sandvik-plantdesigner-web": "/images/sandvik-card.png",
   "assa-abloy-lock-installation": "/images/assa-abloy-card.png",
   "sustainable-grocery-app": "/images/grocery-card.png",
+};
+
+const cardGradients: Record<string, string> = {
+  "ikea-master-material-library": "rgba(2,79,152,0.5)",
+  "suitsupply-insights-app": "rgba(29,18,47,0.5)",
+  "sandvik-plantdesigner-web": "rgba(40,50,65,0.5)",
+  "assa-abloy-lock-installation": "rgba(0,25,64,0.5)",
+  "sustainable-grocery-app": "rgba(93,105,29,0.5)",
 };
 
 function AsteriskLogo() {
@@ -28,6 +39,16 @@ function AsteriskLogo() {
 }
 
 export default function Home() {
+  const scrollRef = useRef<HTMLDivElement>(null);
+
+  function scrollLeft() {
+    scrollRef.current?.scrollBy({ left: -580, behavior: "smooth" });
+  }
+
+  function scrollRight() {
+    scrollRef.current?.scrollBy({ left: 580, behavior: "smooth" });
+  }
+
   return (
     <main className="min-h-screen bg-[#FAF6EE]">
 
@@ -88,11 +109,15 @@ export default function Home() {
         </div>
 
         {/* Horizontal scrolling card row */}
-        <div className="flex gap-6 sm:gap-8 overflow-x-auto scrollbar-hide snap-x snap-mandatory px-6 sm:px-10 pb-6">
+        <div
+          ref={scrollRef}
+          className="flex gap-6 sm:gap-8 overflow-x-auto scrollbar-hide snap-x snap-mandatory px-6 sm:px-10 pb-6"
+        >
           {projects
             .filter((p) => p.featured)
             .map((project) => {
               const imageSrc = projectImages[project.slug] ?? project.cardImage ?? "";
+              const gradientColor = cardGradients[project.slug] ?? "rgba(100,100,100,0.5)";
               return (
                 <Link
                   key={project.slug}
@@ -110,8 +135,13 @@ export default function Home() {
                     />
                   )}
 
-                  {/* Dark gradient overlay — matches Figma */}
-                  <div className="absolute inset-0 bg-gradient-to-b from-transparent from-[17%] to-[rgba(180,180,180,0.55)]" />
+                  {/* Per-card gradient overlay */}
+                  <div
+                    className="absolute inset-0"
+                    style={{
+                      background: `linear-gradient(to bottom, rgba(102,102,102,0) 17%, ${gradientColor} 100%)`,
+                    }}
+                  />
 
                   {/* Card content */}
                   <div className="absolute bottom-0 left-0 w-full p-6 flex flex-col gap-3">
@@ -138,6 +168,31 @@ export default function Home() {
               );
             })}
         </div>
+
+        {/* Arrow navigation buttons */}
+        <div className="flex items-center justify-center gap-4 mt-6">
+          <button
+            onClick={scrollLeft}
+            aria-label="Scroll left"
+            className="flex items-center justify-center w-[62px] h-[62px] rounded-full bg-transparent transition-opacity hover:opacity-70"
+            style={{ border: "1.333px solid #200BD1" }}
+          >
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path d="M12.5 15L7.5 10L12.5 5" stroke="#200BD1" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+            </svg>
+          </button>
+          <button
+            onClick={scrollRight}
+            aria-label="Scroll right"
+            className="flex items-center justify-center w-[62px] h-[62px] rounded-full bg-transparent transition-opacity hover:opacity-70"
+            style={{ border: "1.333px solid #200BD1" }}
+          >
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path d="M7.5 15L12.5 10L7.5 5" stroke="#200BD1" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+            </svg>
+          </button>
+        </div>
+
       </section>
 
       {/* ── Footer ─────────────────────────────────────────── */}
