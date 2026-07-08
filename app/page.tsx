@@ -105,13 +105,13 @@ export default function Home() {
                       src={imageSrc}
                       alt={project.title}
                       fill
-                      className="object-cover transition-transform duration-500 group-hover:scale-[1.03]"
+                      className="object-contain transition-transform duration-500 group-hover:scale-[1.03]"
                       sizes="(max-width: 640px) 82vw, (max-width: 1024px) 480px, 560px"
                     />
                   )}
 
                   {/* Dark gradient overlay — matches Figma */}
-                  <div className="absolute inset-0 bg-gradient-to-b from-transparent from-[17%] to-[rgba(2,60,120,0.65)]" />
+                  <div className="absolute inset-0 bg-gradient-to-b from-transparent from-[17%] to-[rgba(180,180,180,0.55)]" />
 
                   {/* Card content */}
                   <div className="absolute bottom-0 left-0 w-full p-6 flex flex-col gap-3">
